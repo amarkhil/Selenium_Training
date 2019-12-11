@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [face]" parallel="tests">
+  <test thread-count="2" name="faceb(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="FacebookExecution.face">
+        <methods>
+          <include name="f"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- FacebookExecution.face -->
+    </classes>
+  </test> <!-- faceb(failed) -->
+  <test thread-count="2" name="book(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="FacebookExecution.face">
+        <methods>
+          <include name="f"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- FacebookExecution.face -->
+    </classes>
+  </test> <!-- book(failed) -->
+</suite> <!-- Failed suite [face] -->
